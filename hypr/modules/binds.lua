@@ -8,7 +8,9 @@ local menu        = "hyprlauncher"
 ---------------------
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
-local ctrlMod = "CTRL" -- Sets "Windows" key as the ctrl modifier
+local ctrlMod = "CTRL" -- Sets "CTRL" key as the ctrl modifier
+local shiftMod = "SHIFT" -- Sets "SHIFT" key as the shift modifier
+local altMod = "ALT" -- Sets "ALT" key as the alt modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
@@ -32,6 +34,8 @@ hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
+hl.bind(mainMod .. " + " .. shiftMod .. " + C", hl.dsp.exec_cmd("code ~/.config/"))
+hl.bind(mainMod .. " + " .. altMod .. " + C", hl.dsp.exec_cmd("code ~/Documents/Articles/"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
