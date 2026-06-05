@@ -37,6 +37,9 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 hl.bind(mainMod .. " + " .. shiftMod .. " + C", hl.dsp.exec_cmd("code ~/.config/"))
 hl.bind(mainMod .. " + " .. altMod .. " + C", hl.dsp.exec_cmd("code ~/Documents/Articles/"))
 
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(terminal .. " sudo lazydocker"))
+
+
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
