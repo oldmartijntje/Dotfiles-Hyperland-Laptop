@@ -1,4 +1,5 @@
-require("modules.keybinds")
+require("modules.binds")
+require("modules.env")
 
 -- This is an example Hyprland Lua config file.
 -- Refer to the wiki for more information.
@@ -49,17 +50,6 @@ local menu        = "hyprlauncher"
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
-
-
--------------------------------
----- ENVIRONMENT VARIABLES ----
--------------------------------
-
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
-
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
-
 
 -----------------------
 ----- PERMISSIONS -----
