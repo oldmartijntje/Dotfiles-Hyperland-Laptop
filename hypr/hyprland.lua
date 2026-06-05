@@ -1,5 +1,7 @@
 require("modules.binds")
 require("modules.env")
+require("modules.monitors")
+require("modules.autostart")
 
 -- This is an example Hyprland Lua config file.
 -- Refer to the wiki for more information.
@@ -13,19 +15,6 @@ require("modules.env")
 -- require("myColors")
 
 
-------------------
----- MONITORS ----
-------------------
-
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({
-    output   = "eDP-1",
-    mode     = "1920x1080@144",
-    position = "0x0",
-    scale    = "1",
-})
-
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -34,22 +23,6 @@ hl.monitor({
 local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
-
-
--------------------
----- AUTOSTART ----
--------------------
-
--- See https://wiki.hypr.land/Configuring/Basics/Autostart/
-
--- Autostart necessary processes (like notifications daemons, status bars, etc.)
--- Or execute your favorite apps at launch like this:
---
--- hl.on("hyprland.start", function () 
---   hl.exec_cmd(terminal)
---   hl.exec_cmd("nm-applet")
---   hl.exec_cmd("waybar & hyprpaper & firefox")
--- end)
 
 -----------------------
 ----- PERMISSIONS -----
