@@ -6,5 +6,9 @@ require("modules.perms")
 require("modules.input")
 require("modules.design")
 
-local machine = os.getenv("XDG_SESSION_OPT") or "laptop-eridani"
-pcall(require, "machines." .. machine)
+local machine = os.getenv("XDG_SESSION_OPT") or "archlinux"
+if machine == "archlinux" then
+    require("machines.default")
+else
+    pcall(require, "machines." .. machine)
+end
