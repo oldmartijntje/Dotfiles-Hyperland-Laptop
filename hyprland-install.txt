@@ -1,7 +1,3 @@
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
 yay -Sy hyprpolkitagent
 yay -Sy hyprpaper
 yay -Sy waybar
@@ -12,3 +8,4 @@ yay -Sy swappy
 yay -Sy quickshell
 yay -Sy hyprsunset
 yay -Sy rofi
+yay -Sy cliphist
