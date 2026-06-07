@@ -21,3 +21,13 @@ hl.monitor({
 })
 
 hl.bind(mods.mainMod .. " + CTRL + period", hl.dsp.exec_cmd("code ~/Documents/Code/Articles/"))
+
+hl.window_rule({
+  match = { title = ".*Discord.*" },
+  border_color = "rgb(0000FF)",
+  workspace = "2"
+})
+hl.window_rule({
+  match = { title = ".*Spotify.*" },
+  workspace = "2"
+})
