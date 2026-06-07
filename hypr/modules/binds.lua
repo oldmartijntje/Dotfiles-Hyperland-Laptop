@@ -6,7 +6,7 @@ local mods = require("modules.var")
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mods.mainMod .. " + Q", hl.dsp.exec_cmd(mods.terminal))
-local closeWindowBind = hl.bind(mods.mainMod .. " + ESCAPE", hl.dsp.window.close())
+local closeWindowBind = hl.bind(mods.mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mods.mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mods.mainMod .. " + E", hl.dsp.exec_cmd(mods.fileManager))
@@ -25,8 +25,8 @@ hl.bind(mods.mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mods.mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 hl.bind(mods.mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mods.mainMod .. " + C", hl.dsp.exec_cmd("code"))
-hl.bind(mods.mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("code ~/.config/"))
+hl.bind(mods.mainMod .. " + period", hl.dsp.exec_cmd("code"))
+hl.bind(mods.mainMod .. " + SHIFT + period", hl.dsp.exec_cmd("code ~/.config/"))
 
 hl.bind(mods.mainMod .. " + D", hl.dsp.exec_cmd(mods.terminal .. " sudo lazydocker"))
 hl.bind(mods.mainMod .. " + G", hl.dsp.exec_cmd(mods.terminal .. " lazygit"))

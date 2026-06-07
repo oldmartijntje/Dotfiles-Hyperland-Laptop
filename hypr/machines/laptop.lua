@@ -8,4 +8,4 @@ hl.monitor({
     scale    = "1",
 })
 
-hl.bind(mods.mainMod .. " + CTRL + C", hl.dsp.exec_cmd("code ~/Documents/Articles/"))
+hl.bind(mods.mainMod .. " + CTRL + period", hl.dsp.exec_cmd("code ~/Documents/Articles/"))
