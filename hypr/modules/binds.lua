@@ -10,7 +10,7 @@ local closeWindowBind = hl.bind(mods.mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mods.mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mods.mainMod .. " + E", hl.dsp.exec_cmd(mods.fileManager))
-hl.bind(mods.mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mods.mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mods.mainMod .. " + R", hl.dsp.exec_cmd(mods.menu))
 hl.bind(mods.mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mods.mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
@@ -32,6 +32,8 @@ hl.bind(mods.mainMod .. " + D", hl.dsp.exec_cmd(mods.terminal .. " sudo lazydock
 hl.bind(mods.mainMod .. " + G", hl.dsp.exec_cmd(mods.terminal .. " lazygit"))
 hl.bind(mods.mainMod .. " + O", hl.dsp.exec_cmd("flatpak run md.obsidian.Obsidian"))
 hl.bind(mods.mainMod .. " + Z", hl.dsp.exec_cmd("flatpak run app.zen_browser.zen"))
+
+hl.bind(mods.mainMod .. " + V", hl.dsp.exec_cmd("rofi -modi clipboard:~/.config/bash-scripts/cliphist-rofi-img.bash -show clipboard -theme-str 'element-icon { size: 32px; }'"))
 
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("rofi -show window"))
 hl.bind("CTRL + ALT + TAB", hl.dsp.exec_cmd("rofi -show combi -modes combi -combi-modes \"window,drun\""))
