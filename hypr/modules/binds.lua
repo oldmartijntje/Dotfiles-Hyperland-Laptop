@@ -34,7 +34,7 @@ hl.bind(mods.mainMod .. " + O", hl.dsp.exec_cmd("flatpak run md.obsidian.Obsidia
 hl.bind(mods.mainMod .. " + Z", hl.dsp.exec_cmd("flatpak run app.zen_browser.zen"))
 
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("rofi -show window"))
-hl.bind("CTRL + ALT + TAB", hl.dsp.exec_cmd("rofi -show combi -modes combi -combi-modes \"window,drun,run\""))
+hl.bind("CTRL + ALT + TAB", hl.dsp.exec_cmd("rofi -show combi -modes combi -combi-modes \"window,drun\""))
 
 
 -- Switch workspaces with mainMod + [0-9]
