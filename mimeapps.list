@@ -5,3 +5,4 @@ text/plain=code-5.desktop;code-4.desktop;
 [Default Applications]
 application/vnd.ms-publisher=code-3.desktop;
 text/plain=code-5.desktop;
+x-scheme-handler/jetbrains=jetbrainsd.desktop
