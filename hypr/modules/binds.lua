@@ -11,7 +11,7 @@ local closeWindowBind = hl.bind(mods.mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mods.mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mods.mainMod .. " + E", hl.dsp.exec_cmd(mods.fileManager))
 hl.bind(mods.mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mods.mainMod .. " + R", hl.dsp.exec_cmd(mods.menu))
+hl.bind(mods.mainMod .. " + R", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mods.mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mods.mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
