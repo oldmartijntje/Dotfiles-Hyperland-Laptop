@@ -12,6 +12,7 @@ hl.bind(mods.mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/n
 hl.bind(mods.mainMod .. " + E", hl.dsp.exec_cmd(mods.fileManager))
 hl.bind(mods.mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mods.mainMod .. " + R", hl.dsp.exec_cmd("rofi -show drun"))
+hl.bind(mods.mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("rofi -show combi -modes combi -combi-modes \"drun,run\""))
 hl.bind(mods.mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mods.mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
