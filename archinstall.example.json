@@ -52,29 +52,7 @@
         {
             "manualStep": "include multilib",
             "explenation": "Open /etc/pacman.conf and made sure `Include = /etc/pacman.conf.d/mirrorlist` isn't commented out ([multilib])",
-            "exampleCommand": "sudo nano /etc/pacman.conf",
-            "ask": {
-                "done": {
-                    "var": [
-                        {
-                            "key": "multilib",
-                            "value": "it works"
-                        }
-                    ]
-                },
-                "it failed": {
-                    "var": [
-                        {
-                            "key": "multilib",
-                            "value": "manual enable required"
-                        },
-                        {
-                            "key": "steam",
-                            "value": "manual install (after enable of multilib) required"
-                        }
-                    ]
-                }
-            }
+            "exampleCommand": "sudo nano /etc/pacman.conf"
         },
         {
             "exec": "sudo mkinitcpio -P"
@@ -141,25 +119,7 @@
         {
             "manualStep": "Check whether nvidia works",
             "explenation": "Run the command, if it doesn't return an error it's good.",
-            "exampleCommand": "sudo cat /sys/module/nvidia_drm/parameters/modeset",
-            "ask": {
-                "it works": {
-                    "var": [
-                        {
-                            "key": "nvidia",
-                            "value": "it works"
-                        }
-                    ]
-                },
-                "error": {
-                    "var": [
-                        {
-                            "key": "nvidia",
-                            "value": "manual fix required"
-                        }
-                    ]
-                }
-            }
+            "exampleCommand": "sudo cat /sys/module/nvidia_drm/parameters/modeset"
         }
     ]
 }
