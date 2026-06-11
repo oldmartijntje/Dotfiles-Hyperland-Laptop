@@ -31,3 +31,18 @@ hl.window_rule({
   match = { title = ".*Spotify.*" },
   workspace = "2"
 })
+
+-- making flameshot work across multiple screens
+hl.window_rule({
+    name = "flameshot-multi-display-fix",
+    match = { title = ".*flameshot.*" },
+    float = true,
+    pin = true,
+    no_initial_focus = true,
+    move = {-1920, 0},
+    size = {1920 * 2 + 1440, 1080},
+    rounding = 0,
+    border_size = 0,
+    animation = fad,
+    workspace = "1"
+})

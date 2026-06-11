@@ -16,8 +16,7 @@ hl.bind(mods.mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("rofi -show combi -modes
 hl.bind(mods.mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mods.mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
-hl.bind(mods.mainMod .. " + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
-hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("Print", hl.dsp.exec_cmd("grim - | flameshot gui"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mods.mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

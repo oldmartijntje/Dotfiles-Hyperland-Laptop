@@ -45,7 +45,8 @@
                 "nvidia-open",
                 "blueman",
                 "bluez",
-                "bluez-utils"
+                "bluez-utils",
+                "flameshot"
             ],
             "sync": true
         },
@@ -139,6 +140,14 @@
             "commands": [
                 {
                     "git": "git@github.com:oldmartijntje/Articles.git"
+                }
+            ]
+        },
+        {
+            "exec-in": "~/Pictures",
+            "commands": [
+                {
+                    "exec": "mkdir Screenshots"
                 }
             ]
         }
