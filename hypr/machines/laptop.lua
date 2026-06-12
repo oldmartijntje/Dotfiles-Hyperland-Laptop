@@ -9,3 +9,17 @@ hl.monitor({
 })
 
 hl.bind(mods.mainMod .. " + CTRL + period", hl.dsp.exec_cmd("code ~/Documents/Articles/"))
+
+hl.window_rule({
+    name = "flameshot-multi-display-fix",
+    match = { title = ".*flameshot.*" },
+    float = true,
+    pin = true,
+    no_initial_focus = true,
+    move = {-0, 0},
+    size = {1920, 1080},
+    rounding = 0,
+    border_size = 0,
+    animation = fad,
+    workspace = "1"
+})
